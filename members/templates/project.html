@@ -1,0 +1,404 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<title>SBA 3팀</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  </div>
+</div>	
+    {% block carousel %}
+<body>
+    <header class="w3-container w3-xlarge">
+        <div style="height:20px;">
+        </div>
+	 <p class="w3-right">
+	  <a href="login" style="color:{{login_color}};"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="32" fill="currentColor"  class="bi bi-person-fill w3-margin-right"  viewBox="0 0 16 16">
+  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+		  </svg></a>
+		 <a href="" style="color:black;"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
+      <i class="fa fa-search"></i>
+     </p>
+    </header>
+    
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active"> 
+      <img src="https://img-cf.kurly.com/shop/data/main/1/pc_img_1583112495.jpg" class="d-block w-100" style="height:300px">
+    </div>
+    <div class="carousel-item">
+      <img src="https://img-cf.kurly.com/shop/data/main/1/pc_img_1611152269.jpg" class="d-block w-100" style="height:300px" >
+    </div>
+    <div class="carousel-item">
+      <img src="https://img-cf.kurly.com/shop/data/main/1/pc_img_1611152232.jpg" class="d-block w-100" style="height:300px" >
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</body>
+{% endblock %}
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+    .w3-coral{
+        background-color:#FF6F61;
+    }
+	.con h2{
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		font-size: 20px;
+    	font-weight: 500;
+	}
+    .btn_sign {
+        border-radius: 3px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #000;
+    }
+    .w3-greyscale, .w3-grayscale {
+    filter: grayscale(20%);
+}
+</style>
+<body class="w3-content" style="max-width:1600px"><!--20210128 다해: 1400에서 화면이 꽉 차지 않아 1600으로 변경했습니다-->
+
+<!-- Sidebar/menu 다해님--> 
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b><a href="https://sbsateam3-django.run.goorm.io/store/" style="color:white;text-decoration-line:none;">SBA 3팀</a></b></h3>
+  </div>
+	
+	
+	
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+	  
+	   <a onclick="myAccFunc5()" href="#" class="w3-button w3-block w3-black w3-left-align" id="myBtn5">
+      ALL 
+    </a>
+	  <div id="demoAcc5" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="all" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>ALL</a>
+    </div>
+	 
+   <a onclick="myAccFunc()" href="#" class="w3-button w3-block w3-black w3-left-align" id="myBtn">
+      간편조리식 <i class="fa fa-caret-down"></i>
+    </a>
+	  <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="rice" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>샐러드,간편식</a>
+      <a href="rice2" class="w3-bar-item w3-button">즉석밥</a>
+      <a href="freeze" class="w3-bar-item w3-button">냉동식품</a>
+    </div>
+	  
+    <a onclick="myAccFunc2()" href="#" class="w3-button w3-block w3-black w3-left-align" id="myBtn2">
+      과일/채소류 <i class="fa fa-caret-down"></i>
+    </a>
+	  <div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="fruits" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>과일류</a>
+      <a href="veg" class="w3-bar-item w3-button">채소류</a>
+    </div>
+	  
+	  
+    <a onclick="myAccFunc3()" href="#" class="w3-button w3-block w3-black w3-left-align" id="myBtn3">
+      정육/어패/계란 <i class="fa fa-caret-down"></i>
+    </a>
+	  
+    <div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="meat" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>고기류</a>
+      <a href="fish" class="w3-bar-item w3-button">어패류</a>
+      <a href="egg" class="w3-bar-item w3-button">계란류</a>
+    </div>
+	  
+   <a onclick="myAccFunc4()" href='#' class="w3-button w3-block w3-black w3-left-align" id="myBtn4">
+      간식/음료 <i class="fa fa-caret-down"></i>
+    </a>
+	  
+    <div id="demoAcc4" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="snack" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>과자</a>
+      <a href="bot" class="w3-bar-item w3-button">음료</a>
+      <a href="bak" class="w3-bar-item w3-button">베이커리</a>
+    </div>
+  </div>
+	
+<!--------------------------------------우선 위에 부분부터 구현--------------------------------------------------------------------->
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">문의사항</a> 
+  <a href="foruser"  class="w3-bar-item w3-button w3-padding">고객센터</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-tom w3-xlarge w3-coral">
+  <div class="w3-bar-item w3-padding-24 w3-wide w3-coral"><a href="https://sbsateam3-django.run.goorm.io/store/" style="color:white;text-decoration-line:none;">SBA 3팀</a></div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+	
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">{{index}}</p>
+  </header>
+  
+{%block content%}
+<!-----------------------------------이미지 pt-------------------------------->
+  <!-- Image header 하늘님, 시은님 -->	
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>{{num}}</p>
+  </div>
+    <!-- Product grid -->
+   
+  <div class="w3-row w3-grayscale">
+    {%for i in lists%}
+    <div class="w3-col l3 s3">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="{% static i.images%}" style="width:100%; height:330px;">
+          <span class="w3-tag w3-display-topleft w3-coral">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-coral" data-toggle="modal" data-target="#myModal">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>{{i.food}}<br><b>{{i.price}}원</b></p>
+      </div>
+    </div>
+    {% endfor %}
+    </div> 
+    
+    <nav aria-label="Page navigation example">
+        {% if lists.has_other_pages %}
+     <ul class="pagination justify-content-center">
+        {% if lists.has_previous %}
+          <li class="page-link page-item" aria-label="Previous"><a href="?page={{ lists.previous_page_number }}" aria-hidden="true">&laquo;</a></li>
+        {% else %}
+          <li class="page-link disabled" aria-label="Previous"><span aria-hidden="true">&laquo;</span></li>
+        {% endif %}
+        {% for i in lists.paginator.page_range %}
+          {% if lists.number == i %}
+            <li class="active page-item"><span class="page-link">{{ i }} <span class="sr-only">(current)</span></span></li>
+          {% else %}
+            <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+          {% endif %}
+        {% endfor %}
+        {% if lists.has_next %}
+          <li class="page-item"><a class="page-link" href="?page={{ lists.next_page_number }}" aria-hidden="true">&raquo;</a></li>
+        {% else %}
+          <li class="page-item disabled"><span class="page-link" aria-hidden="true">&raquo;</span></li>
+        {% endif %}
+      </ul>
+        {% endif %}
+    </nav>
+    
+     <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">장바구니</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            장바구니에 상품을 담았습니다.
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn w3-coral" style="color:white;" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    
+    
+     {%endblock%} 
+<!-----------------------------------이미지 pt 끝-------------------------------->
+<!-------------------나연님 여기부터 짜시면 돼요~--------------------------->
+  <!-- Subscribe section -->
+  
+	<!--20210128 다해: main화면 장바구니 담기 부분 빼는 게 더 예쁠 것 같아 시은님과 상의 후 일단 주석 처리 해놓았습니다! 
+	<div class="w3-container w3-padding-32">
+    <h1>장바구니에 담기</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="제품명을 작성해주세요" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">담기</button>
+  </div>-->
+  
+  <!-- Footer -->
+	
+
+	
+  <footer class=" w3-light-grey w3-small w3-center" id="footer" style="padding-top:64px;"   >
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-coral">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="introduction">About us</a></p>
+        <p><a href="shipment">배송조회</a></p>
+        <p><a href="howto">입점문의</a></p>
+        <p><a href="#">기프트카드</a></p>
+        <p><a href="#">광고문의</a></p>
+        <p><a href="guide">이용안내</a></p>
+		       
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i>SBA개발3팀</p>
+        <p><i class="fa fa-fw fa-phone"></i> 20210226</p>
+        <p><i class="fa fa-fw fa-envelope"></i> SBA@email.com</p>
+        
+		<h4>결제방법</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i>계좌이체</p>
+        <p><i class="fa fa-fw fa-credit-card"></i>신용카드</p>
+   <br>
+      <br>
+      </div >	
+		<i class="fa fa-facebook-official w3-hover-opacity w3-large" style="color:gray; margin-right:2px;"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"style="color:gray; margin-right:2px;"> </i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"style="color:gray; margin-right:2px;"> </i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"style="color:gray; margin-right:2px;"> </i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"style="color:gray; margin-right:2px;"> </i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"style="color:gray; margin-right:2px;"> </i>	
+		<p style="color:gray;">
+			SBA개발3팀
+		</p>
+    </div>
+  </footer>
+ 
+  
+  <!--------<div class="w3-coral w3-center w3-padding-24"> <a href="#" title="W3.CSS" target="_blank" class="w3-hover-opacity">이용해주셔서 감사합니다!</a></div>------------->
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal 다해님 20210128 수정-->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:8px">
+    <div class="w3-container w3-black w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide w3-center">문의사항</h2>
+      <p>고객님의 목소리를 들려주세요!</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Send your message -> 전송은 아직 활성화X
+		  "></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Send</button>
+    </div>
+  </div>
+</div>
+
+<script>
+
+// ------------------------------------------------------Accordion Sidebar&else 다해님----------------------------------------------------------------
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+	function myAccFunc2() {
+  var x = document.getElementById("demoAcc2");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+	function myAccFunc3() {
+  var x = document.getElementById("demoAcc3");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+  function myAccFunc4() {
+  var x = document.getElementById("demoAcc4");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function myAccFunc5() {
+  var x = document.getElementById("demoAcc5");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+document.getElementById("myBtn2").click();
+document.getElementById("myBtn3").click();
+document.getElementById("myBtn4").click();
+document.getElementById("myBtn5").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+	
+	
+// ---------------------------------다해님 장바구니 활성화------------------------------>	
+
+	
+</script>
+
+</body>
+</html>

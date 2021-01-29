@@ -1,0 +1,60 @@
+{% extends 'project.html' %}
+{% load static %}
+{%block carousel%}
+<body>
+    <header class="w3-container w3-xlarge">
+        <div style="height:20px;">
+        </div>
+     <p class="w3-right">
+      <a href="login"style="color:{{login_color}}"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="32" fill="currentColor"  class="bi bi-person-fill w3-margin-right"  viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg></a>
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+     </p>
+    </header>
+</body>
+{%endblock%}
+{% block content%}
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+    .w3-coral{
+        background-color:#FF6F61;
+    }
+    .w3-coral-border{
+        border-style: solid;
+        border-color: #FF6F61 #ffffff;
+    }
+	.con h2, .intro{
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		font-size: 20px;
+    	font-weight: 500;
+	}
+	
+</style>
+<!-----------------------------------회사 소개-------------------------------->
+  
+	<!---- 이미지 // 무슨 웹사이트인지 간단한 소개글 ---->
+ <div class="intro">
+	 
+	
+	<did class="con">
+	 <img src="{%static 'intro.jpg'%}" style="width:100%">		 
+		<h2>
+		1인 가구를 위한 <span style="color:#FF6F61;">식자재 쇼핑몰</span> SBA개발3팀 입니다.
+		</h2>
+	
+	<img src="{%static 'intro_d.png'%}" style="">
+	
+	 <h2>
+		 그래서 저희는 1인 가구를 위해 부담없이 소량의 식재표를 구매하실 수 있도록 준비했습니다!
+	 </h2>
+		</did>
+	</div>
+	
+	
+	
+<!-----------------------------------회사 소개 끝-------------------------------->
+{%endblock%}

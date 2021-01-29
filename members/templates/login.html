@@ -1,0 +1,177 @@
+{% extends 'project.html'%}
+{%block carousel%}
+<body>
+    <header class="w3-container w3-xlarge">
+        <div style="height:20px;">
+        </div>
+     <p class="w3-right">
+      <a href="login"style="color:black;"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="32" fill="currentColor"  class="bi bi-person-fill w3-margin-right"  viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg></a>
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+     </p>
+    </header>
+</body>
+{%endblock%}
+{%block content%}
+
+
+
+<body>
+	<style>
+a {
+    color: #FF6F61;
+    text-decoration: none;
+	
+}
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+.inner_login {
+    position: absolute;
+    left: 55%;
+    top: 45%;
+    margin: -145px 0 0 -160px;
+}
+.login_tistory{
+        position: relative;
+        width: 320px;
+        margin: 0 auto;
+    }
+.screen_out {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    line-height: 0;
+    text-indent: -9999px;    
+}
+
+body, button, input, select, td, textarea, th {
+    font-size: 13px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}    
+fieldset, img {
+    border: 0;
+}
+.login_tistory .box_login {
+    margin: 35px 0 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.login_tistory .inp_text {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 18px 19px 19px;
+    box-sizing: border-box;
+}
+.login_tistory .inp_text+.inp_text {
+    border-top: 1px solid #ddd;
+}
+.inp_text input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    color: #000;
+    border: none;
+    outline: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+}
+.btn_login {
+    margin: 20px 0 0;
+    width: 100%;
+    height: 48px;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+}
+.login_append {
+    overflow: hidden;
+    padding: 15px 0 0;
+}
+.inp_chk {
+    display: inline-block;
+    position: relative;
+    margin-bottom: -1px;
+}
+.login_append .inp_chk {
+    float: left;
+}
+
+.login_append .txt_find {
+    float: right;
+    color: #777;
+	 
+}
+</style>
+	
+<div class="inner_login">
+    <div class="login_tistory">
+ <form method="post" action="/store/login"  >
+   {% csrf_token %}
+
+	 
+	 <h1> Login </h1>
+     
+	
+    <fieldset>
+      <legend class="screen_out">로그인 정보 입력폼</legend>
+        <p style="color:#FF6F61;font-weight:bold;">{{err}}</p>
+      <div class="box_login">
+        <div class="inp_text">
+          <label for="loginId" class="screen_out">아이디</label>
+          <input type="text" id="loginId" name="userid" placeholder="ID" >
+        </div>
+        <div class="inp_text">
+          <label for="loginPw" class="screen_out">비밀번호</label>
+          <input type="password" id="loginPw" name="userpassword" placeholder="Password" >
+        </div>
+      </div>
+      <button type="submit" class="btn_login" >로그인</button>
+      <div class="login_append">
+        <a href="signup">회원가입</a>
+        <span class="txt_find">
+           <a href="/member/find/loginId" class="link_find">아이디</a>
+            / 
+           <a href="/member/find/password" class="link_find">비밀번호 찾기</a>
+         </span>
+      </div>
+    </fieldset>
+  </form> 
+    </div>
+</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+	{%endblock%}
+
+        
+
+

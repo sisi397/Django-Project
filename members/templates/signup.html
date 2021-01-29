@@ -1,0 +1,53 @@
+{% extends 'project.html'%}
+{%block carousel%}
+<body>
+    <header class="w3-container w3-xlarge">
+        <div style="height:20px;">
+        </div>
+     <p class="w3-right">
+      <a href="login"style="color:black;"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="32" fill="currentColor"  class="bi bi-person-fill w3-margin-right"  viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg></a>
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+     </p>
+    </header>
+</body>
+{%endblock%}
+{%block content%}
+
+  <body>
+    
+    <form method="POST" action="/store/signup" style="width:40%; margin:30px auto; padding : 30px;">
+        {% csrf_token %}
+      <h1> 회원가입 </h1>
+      <hr>
+      <div class="form-group">
+        <label for="exampleInputPassword1">ID</label>
+        <input class="form-control" type="text" placeholder="" name="userid">
+          <p style="margin:5px;font-size:6px;color:#FF6F61;font-weight:bold;">{{err3}}</p>
+      </div>
+    
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" id="passwd" class="form-control" id="exampleInputPassword1" name="userpassword">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password 확인</label>
+      <input type="password" id="pwck" class="form-control" id="exampleInputPassword1" name="pwck">
+        <p style="margin:5px;font-size:6px;color:#FF6F61;font-weight:bold;">{{err2}}</p>
+    </div>
+        
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="useremail">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <p style="color:#FF6F61;font-weight:bold;">{{err}}</p>
+    <div class="form-group row">
+    <div class="col-sm-10">
+        <button type="submit" class="btn btn_sign" data-toggle="modal" data-target="#myModal">등록하기</button>
+        <a href = "login" class="btn btn-secondary">로그인</a>
+    </div>
+    </div>
+    </form>
+      {%endblock%}

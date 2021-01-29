@@ -1,0 +1,138 @@
+{% extends 'project.html' %}
+{% load static %}
+{%block carousel%}
+<body>
+    <header class="w3-container w3-xlarge">
+        <div style="height:20px;">
+        </div>
+     <p class="w3-right">
+      <a href="login"style="color:{{login_color}}"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="32" fill="currentColor"  class="bi bi-person-fill w3-margin-right"  viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg></a>
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+     </p>
+    </header>
+</body>
+{%endblock%}
+{% block content%}
+<!-----------------------------------배송조회 나연-------------------------------->
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+    .w3-coral{
+        background-color:#FF6F61;
+    }
+    .w3-coral-border{
+        border-style: solid;
+        border-color: #FF6F61 #ffffff;
+    }
+	.con h2{
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		font-size: 20px;
+    	font-weight: 500;
+	}
+	
+</style>
+	<style>
+.delivery-top{ 
+letter-spacing: -0.04em;
+line-height: 30px;
+font-size: 100%;
+text-align: center;
+padding-top: 150px;
+			margin-bottom: 80px;}
+	
+	.delivery{
+	padding: 30px;	
+	min-height: 560px;
+		}
+</style>
+
+		<div class="delivery">
+	
+	
+		<div class="delivery-top">
+			<img src="{%static 'ship.png' %}" style="padding-bottom:10px;">
+			<h4 class="tit" style="font-weight:bold;">운송장번호 조회</h4>
+			<p class="comm">
+				신선한 식재료들을 <br>
+				받으시는 분의 문 앞까지 신속히 배송해 드립니다.
+			</p>
+		</div>
+	
+	<div class="w3-container w3-padding-32 delivery-top">
+	 <form action="http://info.sweettracker.co.kr/tracking/5" method="post">
+            <div class="form-group" style="display:none;" >
+              <label for="t_key">API key</label>
+              <input type="text" class="form-control" id="t_key" name="t_key" value="0FTw2jZ0pa6AE48USpSpqg">
+            </div>
+            <div class="form-group">
+              <label for="t_code">택배사 선택</label>
+              <select class="form-control" name="t_code" id="t_code" placeholder="택배사 선택">
+				<option value="00" selected="" disabled="" style="color:#ccc">택배사 선택</option>
+  				<option value="01">우체국택배</option>
+  				<option value="04">CJ대한통운</option>
+  				<option value="05">한진택배</option>
+  				<option value="06">로젠택배</option>
+  				<option value="08">롯데택배</option>
+  				<option value="11">일양로지스</option>
+  				<option value="12">EMS</option>
+  				<option value="13">DHL</option>
+  				<option value="14">UPS</option>
+  				<option value="26">USPS</option>
+  				<option value="16">한의사랑택배</option>
+  				<option value="17">천일택배</option>
+  				<option value="18">건영택배</option>
+  				<option value="20">한덱스</option>
+  				<option value="21">FedEx</option>
+  				<option value="22">대신택배</option>
+  				<option value="23">경동택배</option>
+				<option value="32">합동택배</option>
+  				<option value="24">GS Postbox 택배</option>
+  				<option value="46">CU 편의점택배</option>
+  				<option value="25">TNT Express</option>
+  				<option value="28">GSMNtoN</option>
+  				<option value="29">에어보이익스프레스</option>
+  				<option value="30">KGL네트웍스</option>
+  				<option value="33">DHL Global Mail</option>
+  				<option value="34">i-Parcel</option>
+  				<option value="37">판토스</option>
+  				<option value="38">ECMS Express</option>
+  				<option value="40">굿투럭</option>
+  				<option value="41">GSI Express</option>
+  				<option value="42">CJ대한통운 국제특송</option>
+  				<option value="43">애니트랙</option>
+  				<option value="44">SLX택배</option>
+  				<option value="45">호남택배</option>
+  				<option value="47">우리한방택배</option>
+  				<option value="48">ACI Express</option>
+  				<option value="49">ACE Express</option>
+  				<option value="50">GPS Logix</option>
+  				<option value="51">성원글로벌카고</option>
+  				<option value="52">세방</option>
+  				<option value="51">성원글로벌카고</option>
+  				<option value="53">농협택배</option>
+  				<option value="54">홈픽택배</option>
+  				<option value="55">EuroParcel</option>
+  				<option value="57">Cway Express</option>
+  				<option value="61">워펙스코리아</option>
+  				<option value="62">(주)홈이노베이션로지스</option>
+  				<option value="69">대림통운</option>
+  				<option value="86">삼성전자물류</option>
+  				<option value="97">에이씨티앤코아물류</option>
+  				<option value="100">나은물류</option>
+  				<option value="101">한샘서비스원 택배</option>
+			 </select>
+            </div>
+            <div class="form-group">
+              <label for="t_invoice">운송장 번호</label>
+              <input type="text" class="form-control" name="t_invoice" id="t_invoice" placeholder="운송장 번호">
+            </div>
+            <button type="submit" class="w3-button w3-red w3-margin-bottom">조회하기</button>
+        </form>
+	</div>           
+	</div>        
+	
+  {%endblock%}

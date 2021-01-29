@@ -1,0 +1,109 @@
+{% extends 'project.html' %}
+{% load static %}
+{%block carousel%}
+<body>
+    <header class="w3-container w3-xlarge">
+        <div style="height:20px;">
+        </div>
+     <p class="w3-right">
+      <a href="login"style="color:{{login_color}}"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="32" fill="currentColor"  class="bi bi-person-fill w3-margin-right"  viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg></a>
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+     </p>
+    </header>
+</body>
+{%endblock%}
+{% block content%}
+<!-----------------------------------이용안내 나연-------------------------------->
+<style>
+	.tit{
+	font-weight: 800;
+	padding-left:100px;
+	padding-bottom:10px;
+		}
+.guide1,.guide2,.guide3,.guide4{
+
+float: left;
+width: 510px;
+height: 380px;
+padding: 58px 0 0 58px;
+list-style-type: none;
+}
+	.guide1{
+		background: url({%static 'per.png'%}) no-repeat 270px 55px;
+        
+	}
+	.guide2{
+		background:  url({%static 'cart.png'%}) no-repeat 270px 55px;
+	}
+	.guide3{
+		background:  url({%static 'truck.png'%}) no-repeat 270px 55px;
+	}	.guide4{
+		background:  url({%static 'box.png'%}) no-repeat 270px 30px;
+	}
+	
+	}
+	</style>
+	
+	
+		
+	<div class="tit_page">
+<h2 class="tit">이용안내</h2>
+</div>
+	
+	
+<div class="service">
+	
+	
+        <ul class="list">
+            <li class="guide1"style="background-color:#f7f7f7;" >
+                <strong class="sub_tit" >회원 / 혜택</strong>
+			
+                <p class="txt" >
+					<br>
+                    회원가입을 하시면<br>
+                    가입 즉시 게시판 이용 및 각종 할인 쿠폰과<br>
+                    적립금, 이벤트 혜택을 받으실 수 있습니다.<br>
+                    쿠폰과 적립금은 로그인 하신 후<br>
+                    마이페이지에서 확인하실 수 있습니다.
+                </p>
+            </li>
+			
+            <li class="guide2"style="background-color:#f7f7f7;">
+                <strong class="sub_tit">주문 / 결제</strong>
+                <p class="txt">
+                   <br>
+					상품 주문은
+					장바구니에 <br>상품 담기 &gt; 회원 혹은 비회원 주문 &gt; <br>
+					주문서 작성 &gt; 결제 방법 선택 및 결제 &gt; <br>
+					주문 완료로 이루어집니다.
+                </p>
+              
+            </li>
+            <li class="guide3"style="background-color:#f7f7f7;">
+                <strong class="sub_tit">배송</strong>
+                <p class="txt">
+					<br>
+                    저희는 싱싱한 유기농 상품을<br>
+                    고객님의 식탁까지 빠르고 안전하게<br>
+                    배달하기 위해 항상 노력합니다.<br>
+                    배송 요청사항란에 특수정보를 기입해주시면<br>
+                    보다 안전한 배송이 가능합니다.
+                </p>
+            </li>
+			
+            <li class="guide4" style="background-color:#f7f7f7;">
+                <strong class="sub_tit">취소 / 교환 / 환불</strong>
+                <p class="txt">
+					<br>
+                    주문취소는 배송 단계별로 방법이 상이합니다.<br>
+                    - [입금확인] 단계 :  [로그인 &gt; 주문내역<br>
+                    &nbsp;&nbsp;상세페이지] 에서 직접 취소 가능<br>
+                    - [입금확인] 이후 단계 : '문의하기'로 문의<br>
+                  
+                </p>
+            </li>
+        </ul>
+	</div>
+  {%endblock%}
