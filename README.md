@@ -4,7 +4,7 @@
 ### 프로젝트 개발 환경
 * FRONT-END : javscript, Bootstrap, html5, CSS, Jquery, Json
 * BACK-END : python3, django
-* 개발 환경 : ubuntu18.04 
+* 개발 환경 : ubuntu18.04, 네이버 클라우드 서버
 * 역할 : 회원가입 페이지, 메인페이지 사진 구성 및 페이징, 장고 환경 설정, 전체적인 back-end 부분 기능 구현
 #
 <span><img src="https://user-images.githubusercontent.com/74189924/107042845-8d51b700-6805-11eb-9e48-1f95cd1f0def.jpg" height="230px" width="380px"></span>
